@@ -1,0 +1,36 @@
+.social {
+    display: flex;    
+}
+
+.social__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+
+    background-color: $white;
+    border: 1px solid $gray-light;
+    border-radius: 5px;
+
+    transition: background .2s linear,
+                fill .2s linear,
+                transform .2s linear;
+
+    &:hover {
+        background-color: $gray-light;
+        transform: translateY(-5px);
+
+        & .social__icon {
+            fill: $black; 
+        }
+    }
+}
+
+.social__icon {    
+    height: 20px;    
+    
+    fill: rgba($gray, .5);    
+}

@@ -1,0 +1,59 @@
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;    
+   
+    margin: 0 -1rem 1.8rem;
+}
+
+.portfolio__col {
+    flex-basis: calc(100%/3);
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.portfolio__item {    
+    margin-bottom: 2rem; 
+    
+    overflow: hidden;
+    border-radius: 10px;
+
+    box-shadow: 0 0 4px rgba($black, .25);
+    transition: box-shadow .2s linear;    
+
+    a {
+        text-decoration: none;
+    }
+    &:hover {
+        box-shadow: 0 0 25px rgba($black, .25);
+    }
+}
+
+.portfolio__item-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.portfolio__item-content {
+    padding: 1rem .8rem;
+}
+
+.portfolio__item-category {
+    margin: 0;
+    margin-bottom: 0.5rem;
+
+    font-size: 0.8rem;
+    color: $black;
+    text-transform: uppercase;
+}
+
+.portfolio__item-title {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+
+    font-size: 1.06rem;
+    color: $black;
+    font-weight: 700;
+    text-transform: uppercase;
+}

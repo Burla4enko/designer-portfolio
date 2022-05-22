@@ -1,0 +1,26 @@
+.works {
+    margin-top: 2.8rem;
+    margin-bottom: 2.8rem;
+}
+
+.works__nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.2rem;
+}
+
+.works__nav-link {
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+
+    font-size: .8rem;
+    color: rgba($black, .7);
+    text-decoration: none;
+
+    transition: font-size .2s linear;
+
+    &:hover {
+        text-decoration: underline;
+        font-size: 1rem;
+    }
+}
