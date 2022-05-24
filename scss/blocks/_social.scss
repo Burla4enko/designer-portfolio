@@ -34,3 +34,23 @@
     
     fill: rgba($gray, .5);    
 }
+
+.social-footer__link {
+    margin-bottom: 0;
+
+    background-color: $black;
+    border: 1px solid $white;
+
+    &:hover {
+        background-color: $white;
+        transform: translateY(-5px);
+
+        & .social-footer__icon {
+            fill: $black; 
+        } 
+    }   
+}
+
+.social-footer__icon {
+    fill: $gray;
+}

@@ -1,0 +1,26 @@
+.footer {
+    padding-top: 1.35rem;
+    padding-bottom: 1.35rem;
+
+    background-color: $black;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__credits {
+    display: flex;
+    align-items: center;
+}
+
+.footer__copyright {
+    padding-right: .8rem;
+    margin-right: 1rem;
+    
+    font-size: .94rem;
+    color: $gray-light;
+
+    border-right: 1px solid rgba($gray, .35);
+}
