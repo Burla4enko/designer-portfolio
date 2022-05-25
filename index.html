@@ -31,7 +31,7 @@
        
   </head>
 
-  <body>
+  <body class="no-scroll">
       <!-- SPRITE -->
     <svg style="display: none">
         <symbol id="facebook" viewBox="0 0 430.113 430.114">
@@ -77,6 +77,12 @@
             <g>
                 <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
             </g>
+        </symbol>
+
+        <symbol id="close" viewBox="0 0 512 512">
+          <g>
+            <path d="M0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM175 208.1L222.1 255.1L175 303C165.7 312.4 165.7 327.6 175 336.1C184.4 346.3 199.6 346.3 208.1 336.1L255.1 289.9L303 336.1C312.4 346.3 327.6 346.3 336.1 336.1C346.3 327.6 346.3 312.4 336.1 303L289.9 255.1L336.1 208.1C346.3 199.6 346.3 184.4 336.1 175C327.6 165.7 312.4 165.7 303 175L255.1 222.1L208.1 175C199.6 165.7 184.4 165.7 175 175C165.7 184.4 165.7 199.6 175 208.1V208.1z"/>
+          </g>
         </symbol>
       </svg>
 
@@ -487,5 +493,186 @@
         </div><!--/.footer__inner-->
       </div><!--/.container-->
     </footer>
+
+    <!-- Modals -->
+    <div class="modal" style="display: none;">
+      <div class="modal__dialog">
+
+        <button class="modal__close" type="button">
+          <svg>
+            <use xlink:href="#close"></use>
+          </svg>
+        </button>
+
+        <div class="modal-work">
+          <div class="modal-work__preview">
+            <img class="modal-work__photo" src="http://dummyimage.com/790x780" alt="">
+          </div>
+
+          <div class="modal-work__content">
+            <div class="modal-work__header">
+              <h3 class="model-work__title">Project title</h3>
+              <p class="modal-work__info">category <span>|</span> 2022</p>
+            </div>
+
+            <p class="modal-work__client">client: <br>
+              <span>creative agency</span>
+            </p>
+
+            <div class="modal-work__text">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sed officia, quisquam, vero eaque dolores quia magni ipsam quasi, iure iste velit architecto voluptatem reprehenderit tempora quod. Debitis, alias in!</p>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores non velit fuga, sapiente ab corrupti itaque? Sunt exercitationem ad, quos quas voluptas minus fuga, maiores ducimus, pariatur iure eum reprehenderit.</p>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores non velit fuga, sapiente ab corrupti itaque? Sunt exercitationem ad, quos quas voluptas minus fuga, maiores ducimus, pariatur iure eum reprehenderit.</p>
+            </div>
+
+            <div class="modal-work__footer">
+              <button class="modal-work__btn" type="button">
+                <img src="./img/back.svg" alt="Previous" height="11">
+                Previous
+              </button>
+              <button class="modal-work__btn" type="button">                
+                Next
+                <img src="./img/next.svg" alt="Next" height="11">
+              </button>
+            </div>
+          </div><!--/.modal-work__content-->
+        </div><!--/.modal-work-->
+
+      </div><!--/.modal__dialog-->
+    </div><!--/.modal-->
+
+    <div class="modal">
+      <div class="modal__dialog">
+
+        <button class="modal__close" type="button">
+          <svg>
+            <use xlink:href="#close"></use>
+          </svg>
+        </button>
+
+        <div class="modal-resume">
+          <h3 class="modal__title">resume</h3>
+          <ul class="buttons buttons--modal">
+            <li>
+              <a class="btn btn--thin" href="">download pdf</a>
+            </li>
+            <li>
+              <button class="btn btn--thin" >print</button>
+            </li>
+          </ul>
+
+          <div class="timeline">
+            <div class="timeline__col timeline__col--left">
+              <h4 class="timeline__title">experience</h4>
+              <ul>
+                <li class="timeline__item">
+                  <time class="timeline__date" datetime="2017-12-01">2017 - <b>Present</b></time>
+                  <h5 class="timeline__subtitle">Freelancer</h5>
+                  <p class="limeline__position">Art Director</p>
+                  <p class="timeline__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et delectus maxime aliquam facere iste laudantium quibusdam alias, dignissimos perferendis suscipit.</p>
+                </li>
+
+                <li class="timeline__item">
+                  <time class="timeline__date" datetime="2017-12-01">2006 - 2017</time>
+                  <h5 class="timeline__subtitle">Freelancer</h5>
+                  <p class="limeline__position">Art Director</p>
+                  <p class="timeline__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et delectus maxime aliquam facere iste laudantium quibusdam alias, dignissimos perferendis suscipit.</p>
+                </li>
+
+                <li class="timeline__item">
+                  <time class="timeline__date" datetime="2017-12-01">2017 - <b>Present</b></time>
+                  <h5 class="timeline__subtitle">Freelancer</h5>
+                  <p class="limeline__position">Art Director</p>
+                  <p class="timeline__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et delectus maxime aliquam facere iste laudantium quibusdam alias, dignissimos perferendis suscipit.</p>
+                </li>
+
+                <li class="timeline__item">
+                  <time class="timeline__date" datetime="2017-12-01">2017 - <b>Present</b></time>
+                  <h5 class="timeline__subtitle">Freelancer</h5>
+                  <p class="limeline__position">Art Director</p>
+                  <p class="timeline__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et delectus maxime aliquam facere iste laudantium quibusdam alias, dignissimos perferendis suscipit.</p>
+                </li>
+              </ul>
+            </div> <!--/.timeline__col .timeline__col--left-->
+            <div class="timeline__col timeline__col--right">
+              <h4 class="timeline__title">education</h4>
+              <ul>
+                <li class="timeline__item">
+                  <time class="timeline__date" datetime="2017-12-01">2005 - 2010</time>
+                  <h5 class="timeline__subtitle">Front-End developer</h5>
+                  <p class="limeline__position">SkillUp - IT school</p>                  
+                </li>
+                <li class="timeline__item">
+                  <time class="timeline__date" datetime="2017-12-01">2005 - 2010</time>
+                  <h5 class="timeline__subtitle">Front-End developer</h5>
+                  <p class="limeline__position">SkillUp - IT school</p>                  
+                </li>                
+              </ul>
+              <h4 class="timeline__title">skills</h4>
+              <ul class="progress-bar">
+                <li class="progress-bar__item">
+                  <div class="progress-bar__left">
+                    <div class="progress-bar__title">UI/UX Design</div>
+                  </div>
+                  <div class="progress-bar__right">                 
+                    <div class="progress-bar__progress" style="width: 70%;"></div>                  
+                  </div>
+                </li>
+
+                <li class="progress-bar__item">
+                  <div class="progress-bar__left">
+                    <div class="progress-bar__title">UI/UX Design</div>
+                  </div>
+                  <div class="progress-bar__right">                 
+                    <div class="progress-bar__progress" style="width: 55%;"></div>                  
+                  </div>
+                </li>
+
+                <li class="progress-bar__item">
+                  <div class="progress-bar__left">
+                    <div class="progress-bar__title">UI/UX Design</div>
+                  </div>
+                  <div class="progress-bar__right">                 
+                    <div class="progress-bar__progress" style="width: 15%;"></div>                  
+                  </div>
+                </li>
+                
+                <li class="progress-bar__item">
+                  <div class="progress-bar__left">
+                    <div class="progress-bar__title">UI/UX Design</div>
+                  </div>
+                  <div class="progress-bar__right">                 
+                    <div class="progress-bar__progress" style="width: 30%;"></div>                  
+                  </div>
+                </li>
+              </ul><!--/.progress-bar-->
+
+              <h4 class="timeline__title">Awards</h4>
+              <ul>
+                <li class="timeline__item">
+                  <time class="timeline__date" datetime="2017-12-01">2005 - 2010</time>
+                  <h5 class="timeline__subtitle">Lorem, ipsum dolor.</h5>
+                  <p class="limeline__position">Lorem ipsum dolor sit.</p>
+                  <p class="timeline__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et delectus maxime aliquam facere iste laudantium quibusdam alias, dignissimos perferendis suscipit.</p>                  
+                </li>
+                <li class="timeline__item">
+                  <time class="timeline__date" datetime="2017-12-01">2005 - 2010</time>
+                  <h5 class="timeline__subtitle">Lorem ipsum dolor sit amet.</h5>
+                  <p class="limeline__position">Lorem, ipsum dolor.</p>
+                  <p class="timeline__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et delectus maxime aliquam facere iste laudantium quibusdam alias, dignissimos perferendis suscipit.</p>                  
+                </li>                
+              </ul>
+            </div><!--/.timeline__col .timeline__col--right-->
+          </div><!--/.timeline-->
+
+          <div class="text-center">
+            <a class="btn" href="">hire me</a>
+          </div>
+
+        </div>
+
+      </div><!--/.modal__dialog-->
+    </div><!--/.modal-->
+
   </body>
 </html>

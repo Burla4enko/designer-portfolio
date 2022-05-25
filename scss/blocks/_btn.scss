@@ -1,9 +1,17 @@
 .buttons {
     display: flex;
+
+    &--modal {
+        justify-content: center;        
+    }
 }
 
 .buttons > li {
     margin-right: 1rem;
+
+    &:last-child {
+        margin-right: 0;
+    }
 }
 
 .btn {
@@ -50,4 +58,10 @@
         font-weight: 700;
         border-width: 2px;
     }
+}
+
+.btn--thin {
+    min-width: 145px;
+
+    font-size: .8rem;
 }
