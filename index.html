@@ -31,7 +31,7 @@
        
   </head>
 
-  <body class="no-scroll">
+  <body>
       <!-- SPRITE -->
     <svg style="display: none">
         <symbol id="facebook" viewBox="0 0 430.113 430.114">
@@ -495,6 +495,8 @@
     </footer>
 
     <!-- Modals -->
+
+    <!-- Gallery -->
     <div class="modal" style="display: none;">
       <div class="modal__dialog">
 
@@ -541,7 +543,8 @@
       </div><!--/.modal__dialog-->
     </div><!--/.modal-->
 
-    <div class="modal">
+    <!-- Resume -->
+    <div class="modal" style="display: none;">
       <div class="modal__dialog">
 
         <button class="modal__close" type="button">
@@ -669,7 +672,57 @@
             <a class="btn" href="">hire me</a>
           </div>
 
-        </div>
+        </div><!--/.modal-resume-->
+
+      </div><!--/.modal__dialog-->
+    </div><!--/.modal-->
+
+    <!-- Contact -->
+    <div class="modal" style="display: none;">
+      <div class="modal__dialog modal__dialog--sm">
+
+        <button class="modal__close" type="button">
+          <svg>
+            <use xlink:href="#close"></use>
+          </svg>
+        </button>
+        <div class="modal-contact">
+          <div class="modal-contact__left">
+            <h3 class="modal__title text-left mb-o">Let's talk!</h3>
+            <p class="modal-contact__subtitle">call me or send me a request</p>
+
+            <ul class="modal-contact__info">
+              <li class="modal-contact__info-item"v>
+                <img class="modal-contact__icon" src="./img/mail.svg" alt="Mail icon">
+                <a class="modal-contact__link" href="mailto:ap.burla4enko@gmail.com">ap.burla4enko@gmail.com</a>
+              </li>
+              <li class="modal-contact__info-item">
+                <img class="modal-contact__icon" src="./img/phone.svg" alt="Phone icon">
+                <a class="modal-contact__link" href="tel:+380999229699">+38 099 922 96 99</a>
+              </li>
+            </ul>
+
+            <form class="form" action="" method="post">
+              <div class="form__group">
+                <label class="form__label" for="input-email">Address e-mail</label>
+                <input class="form__input" id="input-email" name="input-email" type="text" placeholder="Address e-mail">
+              </div>
+
+              <div class="form__group">
+                <label class="form__label" for="input-text">Request</label>
+                <textarea class="form__textarea" name="input-text" id="input-text" placeholder="Type your request"></textarea>
+              </div>
+
+              <div class="text-right">
+                <button class="btn" type="submit">send</button>
+              </div>
+            </form>
+
+          </div><!--/.modal-contact__left-->       
+        </div><!--/.modal-contact-->
+
+        
+
 
       </div><!--/.modal__dialog-->
     </div><!--/.modal-->

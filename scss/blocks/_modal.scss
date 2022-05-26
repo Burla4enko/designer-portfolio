@@ -26,6 +26,10 @@
     background-color: $white;
 
     position: relative;
+
+    &--sm {
+        max-width: 900px;
+    }
 }
 
 .modal__close {

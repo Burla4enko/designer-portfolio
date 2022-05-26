@@ -749,6 +749,10 @@ ul {
   position: relative;
 }
 
+.modal__dialog--sm {
+  max-width: 900px;
+}
+
 .modal__close {
   width: 34px;
   height: 34px;
@@ -1013,6 +1017,114 @@ ul + .timeline__title {
   transition: width .3s linear;
 }
 
+.modal-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: url("http://dummyimage.com/477x700") right center no-repeat;
+}
+
+.modal-contact__subtitle {
+  font-size: 1.06rem;
+  text-transform: uppercase;
+  color: #2b2a2c;
+}
+
+.modal-contact__info {
+  margin: 2rem 0 3rem;
+}
+
+.modal-contact__info-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: .6rem;
+}
+
+.modal-contact__info-item:last-child {
+  margin-bottom: 0;
+}
+
+.modal-contact__left {
+  width: 47%;
+  padding: 2rem;
+}
+
+.modal-contact__icon {
+  height: .8rem;
+  margin-right: .6rem;
+}
+
+.modal-contact__link {
+  text-decoration: none;
+  color: #2b2a2c;
+  font-size: .94rem;
+  font-weight: 300;
+}
+
+.form__group {
+  margin-bottom: 1.8rem;
+}
+
+.form__label {
+  display: inline-block;
+  margin-bottom: 0.6rem;
+  font-size: .8rem;
+  color: #2b2a2c;
+  font-weight: 700;
+}
+
+.form__input,
+.form__textarea {
+  display: block;
+  width: 100%;
+  padding: 1.3rem 1.8rem;
+  border: 1px solid rgba(112, 112, 112, 0.3);
+  border-radius: 30px;
+  font-family: inherit;
+  font-size: .8rem;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #2b2a2c;
+  -webkit-transition: border-color .2s linear;
+  transition: border-color .2s linear;
+}
+
+.form__input:focus, .form__input:active,
+.form__textarea:focus,
+.form__textarea:active {
+  outline: none;
+  border-color: #36bdfc;
+}
+
+.form__input::-webkit-input-placeholder,
+.form__textarea::-webkit-input-placeholder {
+  color: #2b2a2c;
+}
+
+.form__input:-ms-input-placeholder,
+.form__textarea:-ms-input-placeholder {
+  color: #2b2a2c;
+}
+
+.form__input::-ms-input-placeholder,
+.form__textarea::-ms-input-placeholder {
+  color: #2b2a2c;
+}
+
+.form__input::placeholder,
+.form__textarea::placeholder {
+  color: #2b2a2c;
+}
+
+.form__textarea {
+  height: 200px;
+  resize: none;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1029,4 +1141,8 @@ ul + .timeline__title {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.mb-o {
+  margin-bottom: 0;
 }
